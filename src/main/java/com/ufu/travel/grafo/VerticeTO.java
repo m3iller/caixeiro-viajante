@@ -1,12 +1,13 @@
 package com.ufu.travel.grafo;
 
+
 public class VerticeTO {
 
 	private Integer id;
 	private String nome;
-	private Float pos;
-	private Float x;
-	private Float y;
+	private Double pos;
+	private Double x;
+	private Double y;
 	private Boolean formigaPassou = false;
 	
 	public Boolean getFormigaPassou() {
@@ -27,24 +28,25 @@ public class VerticeTO {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public Float getPos() {
+	public Double getPos() {
 		return pos;
 	}
-	public void setPos(Float pos) {
+	public void setPos(Double pos) {
 		this.pos = pos;
 	}
-	public Float getX() {
+	public Double getX() {
 		return x;
 	}
-	public void setX(Float x) {
+	public void setX(Double x) {
 		this.x = x;
 	}
-	public Float getY() {
+	public Double getY() {
 		return y;
 	}
-	public void setY(Float y) {
+	public void setY(Double y) {
 		this.y = y;
 	}
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;

@@ -10,7 +10,7 @@ public class AntMain {
 
 	public static List<GrafoLista> grafos = new ArrayList<GrafoLista>();
 	public static List<Ant> ants = new ArrayList<Ant>();
-	public static Integer interacoes = 1000;
+	public static Integer interacoes = 2000;
 	
 	public static void createFormigas(int tam, GrafoLista grafo) throws CloneNotSupportedException{
 		ants.clear();
@@ -25,6 +25,7 @@ public class AntMain {
 		grafos.add(CreateData.createM6());
 		grafos.add(CreateData.createM15());
 		grafos.add(CreateData.createM29());
+		grafos.add(CreateData.createM38());
 		
 		for (GrafoLista grafo : grafos) {
 			System.out.println("Grafo:" + grafo.getNomeGrafo());
